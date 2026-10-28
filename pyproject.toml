@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=84.1.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jarvis-workflow-assistant"
+version = "0.1.0"
+description = "A Telegram-triggered queue for transcript capture and teaching preparation"
+requires-python = ">=3.11"
+dependencies = ["requests>=2.33,<3", "python-dotenv>=1.2,<2", "notion-client>=3,<4", "openai>=2,<3"]
+
+[project.scripts]
+jarvis-bot = "jarvis.bot:main"
+jarvis-worker = "jarvis.worker:main"
+jarvis-plan = "jarvis.weekly_planner:main"
+jarvis-transcript = "jarvis.youtube_transcript_api:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
