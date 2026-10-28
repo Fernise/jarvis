@@ -1,14 +1,8 @@
-![Jarvis — A small, private queue for everyday teaching workflows.](docs/assets/banner.svg)
-
 # Jarvis
 
-A small, private queue for everyday teaching workflows.
+A Telegram-triggered Python assistant for queued YouTube transcript capture, Notion storage and AI-assisted weekly teaching preparation.
 
 [![CI](https://github.com/Fernise/jarvis/actions/workflows/ci.yml/badge.svg)](https://github.com/Fernise/jarvis/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/license-MIT-52646b)](LICENSE)
-[![Built with Codex](https://img.shields.io/badge/Built_with-Codex-5B5BD6)](#development-approach)
-
-A Telegram-triggered Python assistant for queued YouTube transcript capture, Notion storage and AI-assisted weekly teaching preparation.
 
 **Technology:** Python · Telegram · Notion · OpenAI · Supadata
 
@@ -84,12 +78,6 @@ Tests run offline and use temporary queues. They cover unauthorized chats, URL b
 - [Security policy](SECURITY.md)
 - [Contribution guidance](CONTRIBUTING.md)
 - [Third-party notices](THIRD_PARTY_NOTICES.md)
-
-## Development approach
-
-Created and directed by **[Fernando · @Fernise](https://github.com/Fernise)** using agentic programming with **OpenAI Codex**. Product direction, requirements and final decisions are the author’s; coding agents contributed to implementation, refactoring, documentation and testing.
-
-See the [verification record](docs/VERIFICATION.md) for completed checks and known limitations.
 
 ## License
 
