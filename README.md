@@ -6,17 +6,28 @@ A small, private queue for everyday teaching workflows.
 
 [![CI](https://github.com/Fernise/jarvis/actions/workflows/ci.yml/badge.svg)](https://github.com/Fernise/jarvis/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-52646b)](LICENSE)
+[![Built with Codex](https://img.shields.io/badge/Built_with-Codex-5B5BD6)](#development-approach)
 
 A Telegram-triggered Python assistant for queued YouTube transcript capture, Notion storage and AI-assisted weekly teaching preparation.
 
 **Technology:** Python · Telegram · Notion · OpenAI · Supadata
 
+[Overview](#what-it-does) · [Quick start](#quick-start) · [Architecture](docs/ARCHITECTURE.md) · [Verification](docs/VERIFICATION.md)
+
 ## What it does
+
+For teachers experimenting with a small personal assistant for transcript capture and weekly preparation.
 
 - A single authorized Telegram chat and explicit supported command types.
 - Private file-backed queue state with bounded retries.
 - YouTube transcript capture and Notion storage.
 - Weekly speaking-theme preparation from a teacher’s Notion catalog.
+
+## Workflow
+
+![Jarvis request, private queue and worker architecture](docs/assets/workflow.png)
+
+A source-level workflow illustration. Provider access is configured separately; this image does not represent a live execution.
 
 ## Project status
 
@@ -73,6 +84,12 @@ Tests run offline and use temporary queues. They cover unauthorized chats, URL b
 - [Security policy](SECURITY.md)
 - [Contribution guidance](CONTRIBUTING.md)
 - [Third-party notices](THIRD_PARTY_NOTICES.md)
+
+## Development approach
+
+Created and directed by **[Fernando · @Fernise](https://github.com/Fernise)** using agentic programming with **OpenAI Codex**. Product direction, requirements and final decisions are the author’s; coding agents contributed to implementation, refactoring, documentation and testing.
+
+See the [verification record](docs/VERIFICATION.md) for completed checks and known limitations.
 
 ## License
 
